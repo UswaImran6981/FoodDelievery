@@ -1,0 +1,294 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+
+/* css variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+#navbar::before {
+    content: '';
+    background-color: rgb(190, 115, 82);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+body{
+    position: absolute;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position:sticky;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+
+}
+
+/* navigation bar: logo and image */
+#logo {
+    margin: 0;
+}
+
+#logo img {
+    height: 40px;
+    margin: 3px 18px;
+    width: 40px;
+}
+
+/* navigation bar: list styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 15px;
+
+}
+
+#navbar ul li a {
+    color: rgb(7, 7, 7);
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai', 'cursive';
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: rgb(7, 7, 7);
+
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 279px;
+}
+
+#home::before {
+    content: '';
+    background: url("../img/bd1.jpeg");
+    position: absolute;
+    height: 386px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home h1 {
+    color: rgb(7, 7, 7);
+    text-align: center;
+}
+
+#home p {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Bree Serif';
+}
+
+.h-primary center {
+    border: 2px solid brown;
+}
+
+#height {
+    /* border: 2px solid black; */
+
+    height: 542px;
+    width: 100%;
+    margin-top: 51px;
+    background: url('../img/4.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+html{
+scroll-behavior: smooth;
+}
+
+/* service section  */
+#services {
+    margin: 2px;
+    display: flex;
+}
+
+.h-primary center {
+    margin-top: 3px;
+}
+
+#services .box {
+    border: 2px solid rgb(145, 65, 65);
+    padding: 17px;
+    margin: 3px 4px;
+    border-radius: 23px;
+    background-color: rgb(253 230 185);
+
+
+}
+
+#services .box img {
+    height: 140px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Bree Serif';
+    justify-content: center;
+
+}
+
+
+/* client section */
+#client-section {
+    height: 530px;
+    position: relative;
+    /* border: 2px solid black; */
+
+}
+
+#client-section::before {
+    content: '';
+    position: absolute;
+    background: url('../img/bd.jpeg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 100px;
+    padding: 25px;
+    padding-top: 70px;
+}
+
+.client-item {
+    border-radius: 10px;
+}
+
+/* contact section */
+#contact {
+    position: relative;
+
+}
+
+#contact-box {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 34px;
+
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+    font-family: 'Bree Serif';
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url('../img/contact\ us.jpg');
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    /* opacity: 0.9; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 3px;
+    border-radius: 6px;
+    border: 1px solid;
+    /* margin: 12px 28px; */
+    margin: 3px;
+    font-size: 1.0rem;
+}
+
+
+footer {
+    background: rgb(14, 13, 13);
+    color: white;
+    padding: 20px 20px;
+    margin-top: 49px;
+    font-size: 18px;
+    font-family: 'Bree Serif';
+
+}
+
+
+/* utility classes */
+.h-primary {
+    padding: 10px;
+    font-size: 40px;
+    font-family: 'Bree Serif';
+}
+
+.h-secondary {
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Bree Serif';
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid rgb(7, 7, 7);
+    background-color: rgb(190, 115, 82);
+    margin: 13px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(214, 130, 93);
+}
+
+.center {
+    text-align: center;
+}
